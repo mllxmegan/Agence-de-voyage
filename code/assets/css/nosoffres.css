@@ -1,0 +1,132 @@
+/*PAGE ACCUEIL - 9 DESTINATIONS*/
+
+.container-grid{
+	background: #fff;
+	color: black;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 0 80px 40px 80px;
+	grid-gap: 50px;
+}
+
+div.card{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	margin: auto;
+	transition: .4s;
+}
+
+.bg{
+	position: absolute;
+	bottom: 0;
+	background-color: rgb(8,129,209,0.75);
+	color: white;
+	padding: 10px;
+	width: 100%;
+	font-size: 1.2em;
+}
+
+.city_name{
+	text-transform: uppercase;
+	font-size: 1.5em;
+}
+
+.bg1,.bg2,.bg3,.bg4,.bg5,.bg6,.bg7,.bg8,.bg9 {
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.bg1{background-image: url(../img/londres2.png);}
+
+.bg2{background-image: url(../img/paris2.png);}
+
+.bg3{background-image: url(../img/venise2.png);}
+
+.bg4{background-image: url(../img/la2.png);}
+
+.bg5{background-image: url(../img/newyork2.png);}
+
+.bg6{background-image: url(../img/toronto2.png);}
+
+.bg7{background-image: url(../img/tokyo2.png);}
+
+.bg8{background-image: url(../img/bali2.png);}
+
+.bg9{background-image: url(../img/dubai2.png);}
+
+
+
+/*ZOOM SUR IMAGE*/
+
+.bg1:hover,.bg2:hover,.bg3:hover,.bg4:hover,.bg5:hover,.bg6:hover,.bg7:hover,.bg8:hover,.bg9:hover {
+	transform: scale(1.1);
+	transition: 1s;
+	cursor:pointer;
+	box-shadow: 3px 3px 5px 3px #C1BDCA;
+}
+
+@media (min-width: 1800px){
+	.card{
+		height: 450px;
+		width: 450px;
+	}
+
+	.bg{
+		font-size: 1.7em;
+	}
+}
+
+@media (min-width: 1920px){
+	.card{
+		height: 550px;
+		width: 550px;
+	}
+
+	.container-grid{
+		padding: 0 120px 40px 120px;
+	}
+}
+
+
+@media screen and (max-width: 1799px) {
+	.card{
+		height: 350px;
+		width: 350px;
+	}
+
+}
+
+@media (max-width: 1300px){
+	.container-grid{
+		grid-template-columns: repeat(2, 1fr);
+		padding: 0 80px 40px 80px;
+		grid-gap: 50px;
+	}
+}
+
+@media (max-width: 800px){
+
+	.container-grid{
+		padding: 0 40px 40px 40px;
+	}
+
+	.card{
+		height: 300px;
+		width: 300px;
+	}
+}
+
+@media (max-width: 720px){
+	.container-grid{
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+@media (max-width: 480px){
+	.container-grid{
+		padding: 0 5px 40px 5px;
+	}
+}
